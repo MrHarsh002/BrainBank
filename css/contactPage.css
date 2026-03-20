@@ -1,0 +1,66 @@
+/* Center section properly */
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* navbar ke niche adjust */
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left side */
+.contact-info {
+    flex: 1;
+    background: #1e3a8a;
+    color: white;
+    padding: 30px;
+}
+
+/* Right side */
+.contact-form {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Form */
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button */
+button {
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #1e40af;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+
+    .contact-section{
+        height: auto;
+        padding: 20px;
+    }
+}
