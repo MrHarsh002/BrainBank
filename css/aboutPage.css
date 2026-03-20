@@ -52,6 +52,17 @@
      overflow: hidden;
  }
 
+ .nav-pages ul li a:hover,
+ .nav-pages ul li a.active {
+     color: var(--text);
+ }
+
+ .nav-pages ul li a:hover::after,
+ .nav-pages ul li a.active::after {
+     width: 100%;
+ }
+
+
  .mesh-bg::before {
      content: '';
      position: absolute;
